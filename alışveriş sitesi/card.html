@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Card</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        /*header start*/
+        body{
+            margin: 0%;
+            padding:0%;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+        }
+        nav,img{
+            width: 20px;
+            height: 20px;
+        }
+        #sosyalmedya{
+          float:right;
+        }
+        #telefon{
+         text-decoration:unset;
+        
+        }
+        #para{
+            float: left;
+        }
+        #search{
+          float: right;
+        }
+        /*header end*/
+
+
+        /*footer*/
+        #gec{
+          float: right;
+        }
+        div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  margin-top: 5px;
+  width: 100%;
+  height: 60%;
+}
+div.gallery a{
+  text-decoration: none;
+  color:rgb(180, 120, 180) ;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+div.gallery button{
+  margin-left: 20px;
+}
+/*slider end*/
+/*Content*/
+#demo{
+  height: 500px;
+}
+#demo img{
+  height: 400px;
+  margin-left: 150px;
+}
+div.liste ul li a:hover{
+
+  color: rgb(180, 120, 180);
+  
+}
+/*Content end*/
+#ds{
+  text-align: right;
+
+}
+/*artı eksi start*/
+.quantity-input {
+    width: 20px;
+    height: 36px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    color: gray;
+}
+ 
+.quantity-minus, .quantity-plus {
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    float: left;
+}
+ 
+.quantity-minus {
+    background-color: rgb(180, 120, 180);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+ 
+.quantity-plus {
+    background-color: rgb(180, 120, 180);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.quantity-input1 {
+    width: 20px;
+    height: 36px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    color: gray;
+}
+ 
+.quantity-minus1, .quantity-plus1 {
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    float: left;
+}
+ 
+.quantity-minus1 {
+    background-color: rgb(180, 120, 180);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.quantity-input2 {
+    width: 20px;
+    height: 36px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    color: gray;
+}
+ 
+.quantity-minus2, .quantity-plus2 {
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    float: left;
+}
+ 
+.quantity-minus2 {
+    background-color: rgb(180, 120, 180);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+ 
+.quantity-plus2 {
+    background-color: rgb(180, 120, 180);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.quantity-plus1 {
+    background-color: rgb(180, 120, 180);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.quantity-input3 {
+    width: 20px;
+    height: 36px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    color: gray;
+}
+ 
+.quantity-minus3, .quantity-plus3 {
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    float: left;
+}
+ 
+.quantity-minus3 {
+    background-color: rgb(180, 120, 180);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+ 
+.quantity-plus3 {
+    background-color: rgb(180, 120, 180);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+/*artı eksi end*/
+    </style>
+</head>
+<body>
+    <!--Header start-->
+    <div class="contanier1">
+        <div class="row bg-secondary ">
+            <div class="col">
+                <ul class="nav " id="telefon">
+                    <li class="nav-item">
+                      <a class="nav-link link-light" href="" ><img src="telephone.png" alt="Telefon">+2 95 01 88 821</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-light" href="info@domain.com" target="blank"><img src="email.png" alt="mail">info@domain.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col text-end " >
+                <ul class="nav d-flex justify-content-end" id="sosyalmedya">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://tr-tr.facebook.com/" target="blank"><img src="facebook.png" alt="Facebook"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://twitter.com/?lang=tr" target="blank"><img src="twitter.png" alt="Twitter"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://www.instagram.com/?hl=tr" target="blank"><img src="instagram.png" alt="Instagram"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tr.linkedin.com" target="blank"><img src="linkedin.png" alt="linkedin"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com " target="blank"><img src="google.png" alt="Google+"></a>
+                    </li>
+                  </ul>
+            </div>
+            
+        </div>
+        <div class="row ">
+            <div class="col-2 h-50">
+                <nav class="navbar navbar-expand-sm navbar-dark ">
+                    <div class="container-fluid">
+                      <a class="navbar-brand " href="index.html" style="color: rgb(180, 120, 180);"><img src="bag.png" alt="e-shopper">E- SHOPPER</a>
+                    </div>
+                  </nav>
+            </div>
+            <div class="col">
+                <div id="para">
+                    <form class="d-flex justify-content-start">
+                    <select class="form-select me-1 h-25">
+                        <option>USA</option>
+                        <option>EUROPEN</option>
+                        <option>TURKEY</option>
+                        <option>SOUTH KOREAN</option>
+                      </select>
+                      <select class="form-select  h-25">
+                        <option>DOLLAR</option>
+                        <option>EURO</option>
+                        <option>TURKISH</option>
+                        <option>WON</option>
+                      </select>
+                    </form>
+                  </div>
+            </div>
+            <div class="col">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="login.html"><img src="user.png" alt="Account"> Account</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark " href="shop.html"><img src="star.png" alt="Wishlist"> Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#"><img src="chechout.png" alt="Checkout"> Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="card.html"><img src="card.png" alt="Card"> Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="login.html"><img src="kilit.png" alt="Login"> Login</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link " style="color: rgb(180, 120, 180);" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#">Shop</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item link-dark" href="card.html">Card</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#">Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#">404</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="contact.html">Contact</a>
+              </li>
+            </ul> 
+          </div>
+          <div class="col">
+            <form class=" d-inline-flex w-50 justify-content-end " id="search">
+              <input class="form-control " type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </div>
+     <!--Header end-->
+     <div>
+      <nav aria-label="Page navigation example" class="mb-5">
+        <ul class="pagination ">
+          <li class="page-item"><a style="background-color: rgb(180, 120, 180); color: white; border-radius: 0px 200px 200px 0px;" class="page-link" href="index.html">Home</a></li>
+          <li class="page-item"><a style="color: black; width: 200%;" class="page-link" href="#">Shopping Card</a></li>
+        </ul>
+      </nav>
+     </div>
+     <div class="container2 mt-3 me-4 ms-4">
+       <div class="row" style="background-color: rgb(180, 120, 180);">
+         <div class="col"><p>item</p></div>
+         <div class="col-2" ><p style="margin-left:7%;">Price</p></div>
+         <div class="col-3"><p style="margin-right:40%">Quantity</p></div>
+         <div class="col"><p style="margin-right:5%">Total</p></div>
+       </div>
+       <div class="row mt-3" id="sil" >
+          <div class="col"><img style="width: 50%; height: 50%;" src="elbise.png" alt=""></div>
+          <div class="col"><p>White Dress<br>Web Id:16564</p></div>
+          <div class="col"><p>€60</p></div>
+          <div class="col-3">
+            <button class="quantity-minus d-inline"><img src="negative-sign.png"></button>
+           <input class="quantity-input " type="text" value="1" readonly />
+           <button class="quantity-plus d-inline"><img src="plus.png"></button> </div>
+          <div class="col"><p>€60</p></div>
+         
+         <div class="col"><button id="button1"><img src="incorrect.png"></button> </div>
+       </div>
+       
+       <div class="row" id="sil1">
+        <div class="col"><img style="width: 50%; height: 90%;" src="kazak.png" alt=""></div>
+        <div class="col"><p>White Tshirt<br>Web Id::64641</p></div>
+        <div class="col"><p>€49</p></div>
+        <div class="col-3">
+          <button class="quantity-minus1 d-inline"><img src="negative-sign.png"></button>
+         <input class="quantity-input1 " type="text" value="1" readonly />
+         <button class="quantity-plus1 d-inline"><img src="plus.png"></button> </div>
+        <div class="col"><p>€49</p></div>
+        <div class="col"><button id="button2"><img src="incorrect.png"></button> </div>
+      </div>
+      <div class="row mt-4" id="sil2">
+        <div class="col"><img style="width: 50%; height: 50%;" src="kazak3.png" alt=""></div>
+        <div class="col"><p>Red Sweather<br>Web Id:754556</p></div>
+        <div class="col"><p>€30</p></div>
+        <div class="col-3">
+          <button class="quantity-minus2 d-inline"><img src="negative-sign.png"></button>
+         <input class="quantity-input2 " type="text" value="1" readonly />
+         <button class="quantity-plus2 d-inline"><img src="plus.png"></button> </div>
+        <div class="col"><p>€30</p></div>
+        <div class="col"><button id="button3"><img src="incorrect.png"></button> </div>
+      </div>
+      <div class="row" id="sil3">
+        <div class="col"><img style="width: 50%; height: 50%;" src="footer2.png" alt=""></div>
+        <div class="col"><p>Gray Dress<br>Web Id:71912<br></p></div>
+        <div class="col"><p>€70</p></div>
+        <div class="col-3">
+          <button class="quantity-minus3 d-inline"><img src="negative-sign.png"></button>
+         <input class="quantity-input3 " type="text" value="1" readonly />
+         <button class="quantity-plus3 d-inline"><img src="plus.png"></button> </div>
+        <div class="col"><p>€70</p></div>
+        <div class="col"><button id="button4"><img src="incorrect.png"></button> </div>
+      </div>
+      
+     </div>
+
+
+
+     <!--footer start-->
+     <div class="contanier4 mt-4">
+        <div class="row ms-3 me-3 bg-secondary">
+          <div class="col-2 ">
+            <h2><span style="color: rgb(180, 120, 180);">E</span>-SHOPPER</h2>
+            <p>You may also want to <br>look at these products.</p>
+          </div>
+          <div class="col-8 float-start " >
+           <div class="gallery" style="height: 300px;">
+             <a target="_blank" href="footer1.png">
+               <img src="footer1.png" alt="Cinque Terre" width="600" height="400">
+             </a>
+             <div class="desc"><a href="shop.html">Gray Sweater</a></div>
+           </div>
+           
+           <div class="gallery" style="height: 300px;">
+             <a target="_blank" href="footer2.png">
+               <img src="footer2.png" alt="Forest" width="600" height="400">
+             </a>
+             <div class="desc"><a href="shop.html">Gray Dress</a></div>
+           </div>
+           
+           <div class="gallery" style="height: 300px;">
+             <a target="_blank" href="footer3.png">
+               <img src="footer3.png" alt="Northern Lights" width="600" height="400">
+             </a>
+             <div class="desc"><a href="shop.html">Vision Skirt</a></div>
+           </div>
+           <div class="gallery" style="height: 300px;">
+             <a target="_blank" href="footer4.png">
+               <img src="footer4.png" alt="Northern Lights" width="600" height="400">
+             </a>
+             <div class="desc"><a href="shop.html" >White T-shirt</a></div>
+           </div>
+           <div class="col-1 float-start">
+             <a href="contact.html">
+               <img src="world-map-gc89b697ac_1280.png " style="width: 300px; height: 300px;">
+             <p style="position: absolute; top: 800px; right:120px; color: rgb(180, 120, 180);">Where are our branches?</p>
+             </a>
+           </div>
+          </div>
+        </div>
+        <div class="row bg-secondary ms-3 me-3">
+          <div class=" liste col-2">
+            <h3 class="fw-bold ms-3 mt-2">SERVICE</h3>
+            <ul>
+              <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Online Help</a></li>
+              <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Contact Us</a></li>
+              <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Order Statu</a></li>
+              <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Change Locatiom</a></li>
+              <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class=" liste col-2">
+           <h3 class="fw-bold ms-3 mt-2">QUOCK SHOP</h3>
+           <ul>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">T-shirt</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Men</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Women</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Gift Cards</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Shoes</a></li>
+           </ul>
+         </div>
+         <div class=" liste col-2">
+           <h3 class="fw-bold ms-3 mt-2">POLICIES</h3>
+           <ul>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Terms of Use</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Privecy Policy</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Refund Policy</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Billing System</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Tikect System</a></li>
+           </ul>
+         </div>
+         <div class=" liste col-3">
+           <h3 class="fw-bold ms-3 mt-2">ABOUT SHOPPER</h3>
+           <ul>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Company Information</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Careers</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Store Location</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Affillate Program</a></li>
+             <li><a href="" style="text-decoration: none; color: rgb(212, 208, 208);  ">Copyrght</a></li>
+           </ul>
+         </div>
+         <div class="col-3">
+           <h2>ABOUT SHOPPER</h2><br>
+           <form class="d-flex">
+             <input class="form-control me-2" type="search" placeholder="Your Email adress" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">Search</button>
+           </form><br>
+           <p>Get the most recent updates from<br>our site and be updated your self</p>
+         </div>
+         <div class="row bg-secondary ms-3 me-3"> 
+            <div class="col-4 ms-5">
+             <p>Copyrght2021 E-SHOPPER Inc. All rights reserved</p>
+            </div>
+             <div class="col-7" >
+               <p id="ds">Designed by Bahar B.</p>
+             </div>
+           </div>
+        </div>
+      </div>
+      <script>
+         $(document).ready(function () {
+        quantityValue = parseInt($(".quantity-input").val());
+ 
+        $(".quantity-minus").click(function () {
+            if (quantityValue > 1) {
+                quantityValue--;
+                $(".quantity-input").attr("value", quantityValue);
+            }
+        });
+ 
+        $(".quantity-plus").click(function () {
+            if (quantityValue < 100) {
+                quantityValue++;
+                $(".quantity-input").attr("value", quantityValue);
+            }
+        });
+    });
+    $(document).ready(function () {
+        quantityValue = parseInt($(".quantity-input1").val());
+ 
+        $(".quantity-minus1").click(function () {
+            if (quantityValue > 1) {
+                quantityValue--;
+                $(".quantity-input1").attr("value", quantityValue);
+            }
+        });
+ 
+        $(".quantity-plus1").click(function () {
+            if (quantityValue < 100) {
+                quantityValue++;
+                $(".quantity-input1").attr("value", quantityValue);
+            }
+        });
+    });
+    $(document).ready(function () {
+        quantityValue = parseInt($(".quantity-input2").val());
+ 
+        $(".quantity-minus2").click(function () {
+            if (quantityValue > 1) {
+                quantityValue--;
+                $(".quantity-input2").attr("value", quantityValue);
+            }
+        });
+ 
+        $(".quantity-plus2").click(function () {
+            if (quantityValue < 100) {
+                quantityValue++;
+                $(".quantity-input2").attr("value", quantityValue);
+            }
+        });
+    });
+    $(document).ready(function () {
+        quantityValue = parseInt($(".quantity-input3").val());
+ 
+        $(".quantity-minus3").click(function () {
+            if (quantityValue > 1) {
+                quantityValue--;
+                $(".quantity-input3").attr("value", quantityValue);
+            }
+        });
+ 
+        $(".quantity-plus3").click(function () {
+            if (quantityValue < 100) {
+                quantityValue++;
+                $(".quantity-input3").attr("value", quantityValue);
+            }
+        });
+    });
+    //silme islemi start//
+    $(document).ready(function(){
+  $("#button1").click(function(){
+    $("#sil").empty();
+  });
+});
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("#sil1").empty();
+  });
+});
+$(document).ready(function(){
+  $("#button3").click(function(){
+    $("#sil2").empty();
+  });
+});
+$(document).ready(function(){
+  $("#button4").click(function(){
+    $("#sil3").empty();
+  });
+});
+    //silme islemi end//
+      </script> 
+</body>
+</html>
